@@ -1,0 +1,141 @@
+:root {
+     --text-color: white;
+     --link-color: orange;
+     --background-color: black;
+     --header-color:mediumseagreen;
+}
+
+#html {
+  font-size: 62.5%;
+  /*10px*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*걍 깔끔하게 박스만들어 준다 생각혀 박스를 외곽으로확장해서
+  스크롤을 늘리지 않고 안에서 해결하도록*/
+}
+
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-color);
+  padding: 8px 20px;
+  /*앞에껀 위아래 뒤에건 양옆*/
+  font-family:fantasy;
+}
+.header_title{
+
+  font-size: 25px;
+}
+.header_title i{
+  color:var(--link-color);
+}
+
+.header_menu{
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px ;
+  font-size: 30px;
+}
+.header_menu li:hover{
+  background-color:var(--link-color);
+  border-radius: 6px;
+}
+.header_menu li{
+ padding: 5px 70px;
+}
+.header_link{
+display: flex;
+
+}
+.header_link i{
+
+}
+
+.header_togglebutton{
+  display: none;
+  position: absolute;
+  right:30px;
+  font-size: 25px;
+}
+.col-md-4{
+padding: 10px;
+}
+
+.figure img{
+max-width: 100%;
+height: auto;
+
+}
+.set{
+background-color: var(--background-color)  ;
+color: var(--text-color);
+}
+p{font-size: 50px; font-family:fantasy; color: white;  }
+
+.set a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.figure img{
+  width: 100%;
+  height: 100%;
+}
+.col-md-4{
+  position: relative;
+  margin: auto;
+}
+.description{
+  
+ position: absolute;
+ 
+
+ 
+}
+
+.description:hover{
+  
+ 
+ 
+}
+
+@media(max-width:1100px){
+  .header{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .header_menu{
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  .header_menu li{
+    width: 100%;
+    text-align: center;
+
+  }
+  .header_link{
+    justify-content: center;
+    width: 100%;
+    display: none;
+  }
+  .header_togglebutton{
+    display: block;
+  }
+
+
+  .header_link.active,
+  .header_menu.active{
+    display: flex;
+
+  }
+
