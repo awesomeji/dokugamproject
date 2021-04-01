@@ -67,7 +67,7 @@ display: flex;
 }
 .col-md-4{
 padding: 10px;
-position:;
+position:relative;
 
 }
 
@@ -94,15 +94,8 @@ p{font-size: 50px; font-family:fantasy; color: white;  }
 }
 
 
-.description{
-  display: none;
-position: absolute;
-background: pink;
-width: 50%;
-height: 50%;
-transform: translate(50%,50%);
 
-}
+
 
 .description{
   opacity: 0;
